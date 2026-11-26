@@ -1,0 +1,186 @@
+[
+  {
+    "Html": "This is a connection check from your PC.\u003Cbr/\u003EIt doesn\u2019t measure in-game ping or battle performance.\u003Cbr/\u003EOther players may get different results.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "Running a check",
+    "FontSize": 14,
+    "Bold": true,
+    "Top": 12,
+    "Bottom": 10,
+    "LineHeight": 0
+  },
+  {
+    "Html": "\u003Cb\u003E10 samples per channel\u003C/b\u003E is the default. Choose 20, 40, 60 or 120 to observe changes over a longer period.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "Pause large downloads, game updates and cloud backups. Other devices sharing your connection can also affect the scan.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "Reading the results",
+    "FontSize": 14,
+    "Bold": true,
+    "Top": 12,
+    "Bottom": 10,
+    "LineHeight": 0
+  },
+  {
+    "Html": "\u2022 \u003Cb\u003EConnection time:\u003C/b\u003E Time taken to establish a TCP connection.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "\u2022 \u003Cb\u003EReply wait:\u003C/b\u003E Additional time after connecting until the channel\u2019s four-byte opening message has been read.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "\u2022 \u003Cb\u003ETotal time:\u003C/b\u003E Connection time and Reply wait combined.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "In \u003Cb\u003EConnection / Reply\u003C/b\u003E view, Connection time is teal and Reply wait is dashed blue. Switching views does not change the suggestion.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "\u003Cb\u003EObserved ranges\u003C/b\u003E summarize individual successful measurements across all channels. The charts share a zero-based scale that adjusts to the results; the observed range is separate from that scale.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "\u003Cb\u003E39/40\u003C/b\u003E means 39 successful checks out of 40 attempted so far, excluding warm-up. Failed checks could not connect or read the complete opening message; they are not a packet-loss measurement.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "\u003Cb\u003EJitter\u003C/b\u003E shows how much Total time changes between checks. It averages the size of changes between adjacent successful checks; failed checks break the sequence. Lower values mean steadier check timings.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "Hover over or focus a channel for measurements and saved history. Press Enter or Space, or choose View in Details, for the endpoint and full timestamps. Escape closes the panel.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "Choosing a channel",
+    "FontSize": 14,
+    "Bold": true,
+    "Top": 12,
+    "Bottom": 10,
+    "LineHeight": 0
+  },
+  {
+    "Html": "\u003Cb\u003ESuggested channel\u003C/b\u003E favours successful checks, then balances Total time and Jitter. \u003Cb\u003ESeveral channels look similar\u003C/b\u003E means the pick has close alternatives. \u003Cb\u003ENot enough data\u003C/b\u003E means there are too few comparable successful checks to suggest a channel.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "\u003Cb\u003EFastest connection\u003C/b\u003E compares average Connection time. \u003Cb\u003EMost consistent\u003C/b\u003E compares Jitter.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "Saved history",
+    "FontSize": 14,
+    "Bold": true,
+    "Top": 12,
+    "Bottom": 10,
+    "LineHeight": 0
+  },
+  {
+    "Html": "Completed scans are saved on this PC by default, including failed checks; cancelled scans are not saved. History is not uploaded and never changes the current suggestion.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "In \u003Cb\u003ESettings\u003C/b\u003E, keep scans for 7, 30 or 90 days, or choose no age limit. Set a storage limit of 100, 250 or 500 MiB, or turn off saving. Comparisons use up to seven days of compatible scans. Timing summaries weight each scan equally; the plot shows separate scans, not continuous monitoring.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "\u003Cb\u003EClear saved history\u003C/b\u003E deletes saved scans, keeping exported reports and current results.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "Optional checks of Nexon\u0026#39;s official Mabinogi notices record confirmed game-maintenance completion dates. Recorded maintenance dates can shorten comparisons. If dates are unavailable or out of date, saved dates and the seven-day limit still apply.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  },
+  {
+    "Html": "About",
+    "FontSize": 14,
+    "Bold": true,
+    "Top": 12,
+    "Bottom": 10,
+    "LineHeight": 0
+  },
+  {
+    "Html": "Created and maintained by Nydri.",
+    "FontSize": 13,
+    "Bold": false,
+    "Top": 0,
+    "Bottom": 12,
+    "LineHeight": 21
+  }
+]

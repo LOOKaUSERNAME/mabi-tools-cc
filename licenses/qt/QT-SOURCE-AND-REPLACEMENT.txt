@@ -1,0 +1,28 @@
+MabiTools Channel Checker
+Qt corresponding source and dynamic library replacement
+
+This application dynamically links to QtBase 6.10.2 under GNU LGPL v3.
+The six packaged binaries are unmodified from the official Qt MSVC 2022
+Windows x64 kit. The kit's SPDX inventory identifies the source revision:
+000d6c62f7880bb8d3054724e8da0b8ae244130e
+
+The complete QtBase source archive is included in the sources directory inside both the installer
+and portable package.
+File: qtbase-everywhere-src-6.10.2.tar.xz
+SHA-256: aeb78d29291a2b5fd53cb55950f8f5065b4978c25fb1d77f627d695ab9adf21e
+Upstream:
+https://download.qt.io/archive/qt/6.10/6.10.2/submodules/qtbase-everywhere-src-6.10.2.tar.xz
+
+Qt build guidance:
+https://doc.qt.io/qt-6.10/windows-building.html
+
+To use a compatible modified Qt build, close Channel Checker and unpack
+the portable ZIP to a new writable folder. Keep a copy of the original
+files. Replace the four Qt6 module DLLs in the application folder and
+the two matching plugins under platforms and tls. Use a single
+ABI-compatible Windows x64 MSVC Qt build for all six. Keep qt.conf and
+start MabiTools.ChannelChecker.exe. Restore the
+original six files to revert. The app does not impose DLL hash checks at
+runtime; the build manifest records the original package only.
+Nothing in this notice restricts modifying Qt or debugging those modifications.
+

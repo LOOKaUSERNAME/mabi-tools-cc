@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.24)
+project(ChannelScanConsumer LANGUAGES CXX)
+
+# An independent host build: no Qt discovery, application, or fixture scanner.
+set(CC_BUILD_QT OFF CACHE BOOL "Build the Windows Qt application")
+set(BUILD_TESTING OFF CACHE BOOL "Build repository tests")
+if(CC_BUILD_QT)
+    message(FATAL_ERROR "This example requires CC_BUILD_QT=OFF.")
+endif()
+add_subdirectory(../.. channel-checker)
+if(NOT TARGET cc_scan_production)
+    message(FATAL_ERROR "The production transport requires Windows x64 and MSVC.")
+endif()
+add_executable(scan_consumer main.cpp)
+target_link_libraries(scan_consumer PRIVATE cc_scan_production)
+target_compile_options(scan_consumer PRIVATE /W4 /WX /utf-8)

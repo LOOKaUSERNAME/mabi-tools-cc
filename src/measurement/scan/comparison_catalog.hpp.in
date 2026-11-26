@@ -1,0 +1,8 @@
+#pragma once
+#include "cc_scan.hpp"
+
+namespace cc::scanning {
+// Generated from assets/erinn-na.csv. No CLI overrides.
+inline const std::vector<endpoint> comparison_catalog{
+@cc_catalog_rows@};
+}

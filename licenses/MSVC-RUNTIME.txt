@@ -1,0 +1,14 @@
+Microsoft Visual C++ Redistributable (x64)
+Copyright Microsoft Corporation. All rights reserved.
+
+Setup embeds the unmodified Microsoft-signed redistributable version
+14.52.37029.0. It is installed only when the registered x64 runtime is
+missing or older than the required version. This component is Microsoft
+Distributable Code, not covered by the project's MIT licence.
+
+The portable package uses the installed system runtime. Uninstalling
+Channel Checker does not remove the shared Microsoft runtime.
+
+Distribution guidance and applicable Visual Studio licence terms:
+https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files
+https://visualstudio.microsoft.com/license-terms/
